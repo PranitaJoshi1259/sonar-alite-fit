@@ -1,0 +1,5 @@
+@media screen and (max-height: 1000px) {
+    .header-background h3{
+        margin-bottom: 24px !important;
+    }
+}

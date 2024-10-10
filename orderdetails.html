@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marathon Training Plans and Programs for Runners | Alite Fit</title>
+    <meta name="description"
+        content="Achieve your marathon goals with Alite Fit's comprehensive marathon training plans and programs in Vadodara. Get the guidance you need to become a stronger marathon runner. Join now!">
+    <meta name="keywords" content="Marathon Training, Marathon Training Plan, Marathon Training Programs">
+    <link rel="icon" type="image/x-icon" href="./assests/images/cropped-AF-logo-150x150.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="assests/css/common-minify.css?v=1">
+    <link rel="stylesheet" href="assests/css/order-minify.css?v=1">
+    <link rel="stylesheet" href="assests/css/style-minify-992.css?v=1">
+    <link rel="stylesheet" href="assests/css/style-minify-786.css?v=1">
+    <link rel="stylesheet" href="assests/css/style-minify-600.css?v=1">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+</head>
+
+<body class="bg-login">
+    
+    <div class="mt-5 order-container">
+        <h1 class="heading">Order Details</h1>
+        <div class="table-responsive order-table mt-5">
+            <table id="order-listing" class="table">
+                <thead>
+                    <tr class="text-center">
+                        <th>Payment ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Plan Duration</th>
+                        <th>Qty</th>
+                        <th>Status Payment</th>
+                        <th>Order Amount</th>
+                        <th>Date</th>
+                        <th>Coupon Code</th>
+                        <th>Paid Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- <tr class="text-center mb-2">
+                        <td class="payment-id" data-bs-toggle="modal" data-bs-target="#programdetails">1022382148</td>
+                        <td>Yash</td>
+                        <td>Mehta</td>
+                        <td>yash@gmail.com</td>
+                        <td>3 Month</td>
+                        <td>1</td>
+                        <td>Failed</td>
+                        <td>5,000/-</td>
+                        <td>12/2/2023</td>
+                        <td>Flat500</td>
+                        <td>5,000</td>
+                    </tr>
+                    <tr class="text-center mb-2">
+                        <td class="payment-id" data-bs-toggle="modal" data-bs-target="#programdetails">1022382149</td>
+                        <td>Aman</td>
+                        <td>Mistry</td>
+                        <td>aman@gmail.com</td>
+                        <td>6 Month</td>
+                        <td>2</td>
+                        <td>Paid</td>
+                        <td>18,000/-</td>
+                        <td>2/6/2023</td>
+                        <td>Flat100</td>
+                        <td>17,000</td>
+                    </tr>
+                    <tr class="text-center mb-2">
+                        <td class="payment-id" data-bs-toggle="modal" data-bs-target="#programdetails">1022382150</td>
+                        <td>Deep</td>
+                        <td>Yadav</td>
+                        <td>deep@gmail.com</td>
+                        <td>1 Year</td>
+                        <td>4</td>
+                        <td>Paid</td>
+                        <td>64,000/-</td>
+                        <td>21/4/2023</td>
+                        <td>Fit 20%</td>
+                        <td>52,000</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+        <nav id="navigation" aria-label="Page navigation">
+            <!-- <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+            </ul> -->
+        </nav>
+    </div>
+ <!-- Order Detailing Page design end-->
+
+<!-- program details popup start -->
+
+<div class="modal fade" id="programdetails" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center w-100">Payment Details</h5>
+                <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form class="paynow-form" id="payment-form">
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Payment ID</label>
+                            <input type="text" id="payment-id" class="form-control" value="1022382148" readonly>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Amount</label>
+                            <input type="number" id="amount" class="form-control" value="5000" readonly>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Status</label>
+                            <input type="text" id="status" class="form-control text-capitalize" value="Failed" readonly>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Method</label>
+                            <input type="text" id="payment-method" class="form-control text-capitalize" value="Card" readonly>
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="text" id="email" class="form-control" value="yash@gmail.com" readonly>
+                        </div>
+
+                        <div class="col-6 mb-3">
+                            <label class="form-label"> Contact</label>
+                            <input type="text" id="contact" class="form-control" value="9824106811" readonly>
+                        </div>
+                    </div>
+                    <!-- <div class="row">
+							<div class="modal-footer">
+								<button type="submit" class="primary-button">Edit</button>
+							</div>
+						</div> -->
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- program details popup end -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="assests/js/order-details.js"></script>
+</body>
+</html>

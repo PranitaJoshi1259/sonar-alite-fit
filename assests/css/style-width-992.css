@@ -1,0 +1,79 @@
+@media screen and (max-width: 992px) {
+    .joinus-button {
+        width: 200px;
+        height: auto;
+    }
+
+    .header-background h1 span {
+        width: 100%;
+        font-size: 36px;
+    }
+    .header-background h3, .header-background h1{
+        width: 100%;
+    }
+    .why-alite-section-content {
+        padding: 0;
+        margin-top: 0;
+        background-color: #161616;
+    }
+    .our-team-carousel .ti-inner {
+        width: 90%;
+        margin: auto;
+    }
+    .our-team-carousel .owl-prev {
+        left: -18px;
+    }
+    .our-team-carousel .owl-next {
+        right: -18px;
+    }
+    .plan-card-ui {
+        margin: 0 10px;
+    }
+    .plan-card {
+        padding: 0 20px;
+    }
+    .plan-description img {
+        width: 96px;
+        height: 96px;
+    }
+    .meet-our-team {
+        padding: 0 20px;
+    }
+    .plan-card-ui {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    .contact-us-left-side h2{
+        margin-top: 40px;
+    }
+    .contact-us-left-side {
+        width: 100%;
+        padding: 0;
+    }
+    .plansection h2, .our-client-section h2{
+        padding: 0 20px;
+    }
+    .modal-dialog{
+        max-width: 800px;
+    }
+    .large{
+        font-size: 28px;
+    }
+    .heading{
+        font-size: 48px;
+    }
+    .why-alite-section {
+        padding: 20px;
+        background-color: #F1F2F4;
+    }
+    .roatet-shape-top, .roatet-shape-bottom1{
+        display: none;
+    }
+    .support-section img{
+        width: 40%;
+    }   
+    .support-section h1 {
+        font-size: 34px;
+    }
+}

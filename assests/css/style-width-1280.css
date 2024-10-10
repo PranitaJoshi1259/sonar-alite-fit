@@ -1,0 +1,20 @@
+@media screen and (max-width: 1280px) {
+    .our-team-carousel :is(.owl-prev, .owl-next),
+    .testimonials-carousel :is(.owl-prev, .owl-next) {
+        top: 54%;
+    }
+    .our-team-carousel .owl-prev {
+        left: -30px;
+    }
+    .our-team-carousel .owl-next {
+        right: -30px;
+    }
+    .our-team-carousel .owl-prev,
+    .testimonials-carousel .owl-prev {
+        margin-left: 20px;
+    }
+    .our-team-carousel .owl-next,
+    .testimonials-carousel .owl-next {
+        margin-right: 20px;
+    }
+}

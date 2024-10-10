@@ -1,0 +1,13 @@
+
+@media screen and (max-width: 1024px) {
+    .our-team-carousel .ti-inner {
+        width: 95%;
+        margin: auto;
+    }
+    .contact-us-right-side {
+        padding: 0 10px 10px 10px
+    }
+    .payment-status-inner-container{
+        padding-inline: 80px;
+    }
+}

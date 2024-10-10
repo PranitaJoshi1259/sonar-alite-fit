@@ -1,0 +1,14 @@
+@media screen and (max-width: 1600px) {
+    .alite-fit-description {
+        padding: 5%;
+    }
+    .carousel-banner-text{
+        padding-left: 60px;
+    }
+    .header-text{
+        font-size: 38px;
+    }
+    .header-background h3{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,17 @@
+@media screen and (max-height: 800px) {
+    .header-text{
+        font-size: 20px;     
+    }
+    .header-background h3{
+        font-size: 18px;
+    }
+    .carousel-banner-text{
+        top: 70%;
+    }
+    .header-background h1, .header-background h3{
+        margin-bottom: 20px !important;
+    }
+    .support-section{
+        height: 100%;
+    }
+}

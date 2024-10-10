@@ -1,0 +1,11 @@
+@media screen and (max-width: 430px) {
+    .header-text{
+        font-size: 22px;     
+    }
+    .header-background h3{
+        font-size: 18px;
+    }
+    .carousel-banner-text{
+        top: 85%;
+    }
+}

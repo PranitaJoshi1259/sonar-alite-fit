@@ -1,0 +1,19 @@
+@media screen and (max-width: 1400px) {
+    .contact-us-left-side h2 {
+        font-size: 35px;
+        line-height: 47px;
+    }
+    .nav-list li a {
+        padding: 0;
+    }
+    .alite-fit-description h2 {
+        font-size: 30px;
+    }
+    .header-text{
+        font-size: 34px;
+    }
+    .header-background h3{
+        font-size: 26px;
+    }
+
+}

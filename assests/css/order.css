@@ -1,0 +1,45 @@
+.order-container{
+    max-width: 1700px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.order-table th{
+    font-size: 24px;
+    vertical-align: middle;
+}
+.order-table td{
+    font-size: 22px;
+}
+.order-table .payment-id{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.form-label{
+    font-family: "Manrope", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+}
+tbody{
+    border-width:1px
+}
+table,th,td,.table>:not(caption)>*>*{
+    border:1px solid #000000;
+}
+tr:nth-child(even) 
+{
+    background-color: #f2f2f2;
+}
+
+/* Pagination start */
+.page-link{
+    color: var(--primary-color);
+}
+.page-link:hover{
+    color: var(--primary-color);
+}
+.page-item.active .page-link{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+/* Pagination end */
