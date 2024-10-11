@@ -13,7 +13,9 @@ async function submitLoginForm(event) {
     const responseMessageDiv = $("#response-output");
 
     form.addClass("submitting");
-    const response = await fetch(nodeApi + '/login', {
+
+    // Introduced a bug here by removing 'await'
+    const response = fetch(nodeApi + '/login', {
         method: 'POST',
         body: JSON.stringify(loginData),
         headers: {
@@ -21,7 +23,7 @@ async function submitLoginForm(event) {
         }
     });
 
-    const responseJson = await response.Json();
+    const responseJson = await response.json();
     
     if(response.status === 200) {
         localStorage.setItem('access_token', responseJson.token);
@@ -34,6 +36,5 @@ async function submitLoginForm(event) {
         responseMessageDiv.html(responseJson.message || 'Something went wrong!');
     }
 
-    
     form.removeClass("submitting");
 }
