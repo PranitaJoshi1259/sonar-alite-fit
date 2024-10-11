@@ -21,7 +21,7 @@ async function submitLoginForm(event) {
         }
     });
 
-    const responseJson = await response.json();
+    const responseJson = await response.Json();
     
     if(response.status === 200) {
         localStorage.setItem('access_token', responseJson.token);
