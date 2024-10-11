@@ -7,7 +7,7 @@
 .heading{
     font-size: 60px;
     line-height: normal;
-    font-family: "Manrope", Sans-serif;
+    /* font-family: "Manrope", Sans-serif; */
     font-weight: 700;
 }
 .subheading{
